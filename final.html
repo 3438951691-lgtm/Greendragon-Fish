@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>祝去旅游小姐平安夜快乐</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        #welcome-screen {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: url('微信图片_20251221191524_69_34.jpg') no-repeat center center;
+            background-size: cover;
+        }
+
+        #welcome-screen::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.4);
+            z-index: 1;
+        }
+
+        #welcome-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            color: white;
+        }
+
+        #welcome-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+            font-weight: bold;
+        }
+
+        .jump-button {
+            display: inline-block;
+            padding: 15px 50px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            border: 2px solid #ffffff;
+            border-radius: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            transition: all 0.3s;
+        }
+
+        .jump-button:hover {
+            background: #ffffff;
+            color: #333;
+            transform: scale(1.05);
+        }
+
+        .backup-link {
+            margin-top: 25px;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        .backup-link a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="welcome-screen">
+        <div id="welcome-content">
+            <div id="welcome-title">祝去旅游小姐天天开心快乐</div>
+            
+            <a href="312.html" class="jump-button">开启惊喜</a>
+
+            <div class="backup-link">
+                如果加载太慢，请 <a href="312.html">点击这里直接进入</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
